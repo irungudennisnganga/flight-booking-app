@@ -2,8 +2,15 @@
     columns: 4;
 }
 .card {
-    height: auto;
+    /* height: 500px; */
 }
 .image {
-    height: 400px;
+    height: 300px;
+    border-radius: 16px;
+}
+.card-title {
+   color: blueviolet;
+}
+.card-text {
+    color: rgb(43, 226, 171);
 }
