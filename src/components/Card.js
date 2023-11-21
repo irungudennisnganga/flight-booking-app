@@ -1,7 +1,27 @@
 import React from 'react'
 import "./Card.css"
 function Card({ component}) {
-    //console.log(component)
+    console.log(component)
+    function handleClick(id,booked) {
+        
+        // if(!booked){
+        //    return 
+        // } else{
+        //   return alert(false);
+        // }
+
+        fetch(`https://flights-api-512j.onrender.com/flights/${id}`,{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    booked: true
+                })
+            })
+
+    }
+    //if(!component) return <p>Loading....</p> 
   return (
     <div className='card-holder'>
       {component.map( flight =>{
@@ -13,6 +33,7 @@ function Card({ component}) {
             <p> <b className='card-text'>Arrival</b>   : {flight.arival}</p>
             <p> <b className='card-text'>Price</b>     : {flight.price}</p> 
             <p> <b className='card-text'>Aeroplane </b>: {flight.aeroplane}</p>
+            <button onClick={ () => handleClick(flight.id,flight.booked)} className='book-btn'>Book Ticket</button>
           </div>
         )
       })}
