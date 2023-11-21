@@ -9,6 +9,8 @@ useEffect(() => {
   fetch(`https://flights-api-512j.onrender.com/flights`)
     .then((response) => response.json())
     .then((flights) => setComponent(flights))
+    .catch((error) => alert(error))
+    
 },[])
   return (
     <div className="App">
