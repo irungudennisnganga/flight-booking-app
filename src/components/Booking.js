@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './flightForm.css';
-const FlightBookingForm = () => {
+const Booking = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
