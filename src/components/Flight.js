@@ -1,5 +1,5 @@
 import React from 'react'
-function Card({ component}) {
+function Flight({ flight }) {
     // console.log(component)
     function handleClick(id) {
         fetch(`https://flights-api-512j.onrender.com/flights/${id}`,{
@@ -16,7 +16,7 @@ function Card({ component}) {
    
   return (
     <div className='card-holder'>
-      {component.map( flight =>{
+      {flight.map( flight =>{
         return (
           <div className='card' key={flight.id}>
             <img className='image' src={flight.image} alt={flight.name} />
@@ -33,4 +33,4 @@ function Card({ component}) {
   )
 }
 
-export default Card
+export default Flight
