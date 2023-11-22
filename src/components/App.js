@@ -1,4 +1,4 @@
-import Card from './Card';
+import Card from './Flight';
 import './App.css';
 import { useState,useEffect } from 'react';
  import FlightBookingForm from './flightForm';
