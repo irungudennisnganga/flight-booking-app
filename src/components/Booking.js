@@ -83,4 +83,4 @@ const FlightBookingForm = () => {
   );
 };
 
-export default FlightBookingForm;
+export default Booking;
