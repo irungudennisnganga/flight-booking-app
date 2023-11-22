@@ -40,9 +40,8 @@ if(!load) {
     </div>
 }
   return (
-    <>
+    
     <div className="App">
-      <Flight component={component}/>
      
      <Navbar />
       <Routes>
@@ -51,7 +50,7 @@ if(!load) {
         <Route path='/bookings' element={<Booking />} />
       </Routes>
     
-    </>
+    </div>
   );
 }
 
