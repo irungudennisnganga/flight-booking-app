@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './flightForm.css';
 const FlightBookingForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -18,6 +18,7 @@ const FlightBookingForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  //setFormData('')
     // You can handle the form submission logic here or send the data to a backend
     console.log('Form submitted:', formData);
   };
