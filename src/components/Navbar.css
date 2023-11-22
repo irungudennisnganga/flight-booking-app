@@ -1,0 +1,33 @@
+nav {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 30px; /* Padding for the entire navbar */
+    display: flex; /* Flex container */
+  }
+  
+  /* Remove default list styles */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  /* Style for each list item */
+  li {
+    margin-right: 20px; /* Spacing between list items */
+  }
+  
+  /* Style for links */
+  a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Link color */
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  /* Hover effect for links */
+  a:hover {
+    color: bisque; /* Change color on hover */
+  }
