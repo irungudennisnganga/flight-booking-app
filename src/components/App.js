@@ -1,7 +1,7 @@
-import Card from './Flight';
+import Flight from './Flight'
 import './App.css';
 import { useState,useEffect } from 'react';
- import FlightBookingForm from './flightForm';
+import Booking from './Booking';
 function App() {
 
   const [component,setComponent] = useState([])
@@ -16,8 +16,8 @@ useEffect(() => {
   return (
     <div className="App">
      
-      <Card component={component}/>
-      <FlightBookingForm />
+      <Flight component={component}/>
+      <Booking />
     </div>
   );
 }
