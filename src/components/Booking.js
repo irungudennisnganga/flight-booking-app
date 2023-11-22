@@ -29,7 +29,7 @@ const Booking = () => {
       <form className='input-data' onSubmit={handleSubmit}>
         <label className='label-description' htmlFor="name">Name:</label>
         <input
-        className='input-data'
+        className='input-data' 
           type="text"
           id="name"
           name="name"
