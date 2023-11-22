@@ -41,6 +41,8 @@ if(!load) {
 }
   return (
     <>
+    <div className="App">
+      <Flight component={component}/>
      
      <Navbar />
       <Routes>
