@@ -1,36 +1,49 @@
-import React from 'react'
-function Flight({ flight }) {
-    // console.log(component)
-    function handleClick(id) {
-        fetch(`https://flights-api-512j.onrender.com/flights/${id}`,{
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    booked: true
-                })
-            })
+import React from 'react';
 
-    }
-   
+function Flight({ flight }) {
+  function handleClick(id) {
+    fetch(`https://flights-api-512j.onrender.com/flights/${id}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        booked: true
+      })
+    })
+      .then(response => response.json())
+      .then(data => {
+        // Handle the response if needed
+        console.log(data);
+      })
+      .catch(error => console.error(error));
+  }
+
   return (
     <div className='card-holder'>
-      {flight.map( flight =>{
-        return (
-          <div className='card' key={flight.id}>
-            <img className='image' src={flight.image} alt={flight.name} />
-            <h3 className='card-title'>{flight.name}</h3>
-            <p> <b className='card-text'>Depature </b> : {flight.depature}</p>
-            <p> <b className='card-text'>Arrival</b>   : {flight.arival}</p>
-            <p> <b className='card-text'>Price</b>     : {flight.price}</p> 
-            <p> <b className='card-text'>Aeroplane </b>: {flight.aeroplane}</p>
-            <button onClick={ () => handleClick(flight.id)} className='book-btn'>Book Ticket</button>
-          </div>
-        )
-      })}
+      {flight.map(flightItem => (
+        <div className='card' key={flightItem.id}>
+          <img className='image' src={flightItem.image} alt={flightItem.name} />
+          <h3 className='card-title'>{flightItem.name}</h3>
+          <p>
+            <b className='card-text'>Depature</b>: {flightItem.depature}
+          </p>
+          <p>
+            <b className='card-text'>Arrival</b>: {flightItem.arival}
+          </p>
+          <p>
+            <b className='card-text'>Price</b>: {flightItem.price}
+          </p>
+          <p>
+            <b className='card-text'>Aeroplane</b>: {flightItem.aeroplane}
+          </p>
+          <button onClick={() => handleClick(flightItem.id)} className='book-btn'>
+            Book Ticket
+          </button>
+        </div>
+      ))}
     </div>
-  )
+  );
 }
 
-export default Flight
+export default Flight;
