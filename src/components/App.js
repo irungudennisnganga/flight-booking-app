@@ -1,7 +1,7 @@
 import Flight from './Flight'
 import './App.css';
 import { useState,useEffect } from 'react';
-import Booking from './Booking';
+
 function App() {
 
   const [component,setComponent] = useState([])
@@ -17,7 +17,7 @@ useEffect(() => {
     <div className="App">
      
       <Flight component={component}/>
-      <Booking />
+     
     </div>
   );
 }
