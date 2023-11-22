@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Card.css"
 function Card({ component}) {
     console.log(component)
     function handleClick(id,booked) {
