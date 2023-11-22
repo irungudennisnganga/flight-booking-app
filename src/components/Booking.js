@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import './flightForm.css';
+import "./FlightForm.css"
 const Booking = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -24,11 +24,12 @@ const Booking = () => {
   };
 
   return (
-    <div>
-      <h1>Flight Booking Form</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
+    <div className='holder'>
+      <h1 className='header'>Flight Booking Form</h1>
+      <form className='input-data' onSubmit={handleSubmit}>
+        <label className='label-description' htmlFor="name">Name:</label>
         <input
+        className='input-data'
           type="text"
           id="name"
           name="name"
@@ -37,8 +38,9 @@ const Booking = () => {
           required
         />
 
-        <label htmlFor="email">Email:</label>
+        <label className='label-description' htmlFor="email">Email:</label>
         <input
+        className='input-data'
           type="email"
           id="email"
           name="email"
@@ -47,8 +49,9 @@ const Booking = () => {
           required
         />
 
-        <label htmlFor="departureCity">Departure City:</label>
+        <label className='label-description' htmlFor="departureCity">Departure City:</label>
         <input
+        className='input-data'
           type="text"
           id="departureCity"
           name="departureCity"
@@ -57,8 +60,9 @@ const Booking = () => {
           required
         />
 
-        <label htmlFor="destinationCity">Destination City:</label>
+        <label className='label-description' htmlFor="destinationCity">Destination City:</label>
         <input
+        className='input-data'
           type="text"
           id="destinationCity"
           name="destinationCity"
@@ -67,8 +71,9 @@ const Booking = () => {
           required
         />
 
-        <label htmlFor="departureDate">Departure Date:</label>
+        <labe className='label-description'l htmlFor="departureDate">Departure Date:</labe>
         <input
+        className='input-data'
           type="date"
           id="departureDate"
           name="departureDate"
@@ -77,7 +82,7 @@ const Booking = () => {
           required
         />
 
-        <button type="submit">Submit Booking</button>
+        <button className='submit-btn' type="submit">Submit Booking</button>
       </form>
     </div>
   );

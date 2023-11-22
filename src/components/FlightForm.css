@@ -1,5 +1,5 @@
 
-/* div {
+.holder {
     max-width: 400px;
     margin: auto;
     padding: 20px;
@@ -8,17 +8,17 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  h1 {
+  .header {
     text-align: center;
     color: #333;
   }
   
-  form {
+  .input-data {
     display: flex;
     flex-direction: column;
   }
   
-  label {
+  .label-description {
     margin-bottom: 6px;
     color: #555;
   }
@@ -30,7 +30,7 @@
     border-radius: 4px;
   }
   
-  submit button {
+   .submit-btn {
     background-color: #4caf50;
     color: white;
     padding: 10px;
@@ -39,7 +39,7 @@
     cursor: pointer;
   }
   
- submit button:hover {
+  .submit-btn:hover {
     background-color: #45a049;
   }
-   */
+  
