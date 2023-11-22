@@ -16,8 +16,8 @@ code {
   columns: 4;
 }
 .card {
-  /* height: 550px; */
-  margin-top: 40px;
+  height: 550px;
+  margin-bottom: 40px;
   background-color: bisque;
   border-radius: 10px;
 }

@@ -1,6 +1,7 @@
 import Card from './Card';
 import './App.css';
 import { useState,useEffect } from 'react';
+// import FlightBookingForm from './flightForm';
 function App() {
 
   const [component,setComponent] = useState([])
@@ -14,9 +15,11 @@ useEffect(() => {
 },[])
   return (
     <div className="App">
+      
       <Card component={component}/>
+    
     </div>
   );
 }
-
+{/* <FlightBookingForm /> */}
 export default App;
