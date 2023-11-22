@@ -15,9 +15,9 @@ useEffect(() => {
 },[])
   return (
     <div className="App">
-       <FlightBookingForm />
+     
       <Card component={component}/>
-    
+      <FlightBookingForm />
     </div>
   );
 }
