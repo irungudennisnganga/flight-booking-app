@@ -19,6 +19,7 @@ code {
  justify-content: space-between;
  flex-wrap: wrap;
  margin-top: 60px;
+ margin-bottom: 100px;
 }
 
 .card {
@@ -118,9 +119,10 @@ a:hover {
   color: #fff;
   padding: 20px;
   text-align: center;
-  /* position: fixed; */
+  position: fixed;
   bottom: 0;
   width: 100%;
+ 
 }
 
 .footer-content {
