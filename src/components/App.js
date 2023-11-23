@@ -4,6 +4,8 @@ import NavBar from './Navbar';
 import Flight from './Flight';
 import Booking from './Booking';
 import TermsAndCondition from './TermsAndCondition';
+import Footer from './Footer';
+
 function App() {
   const [flight, setFlight] = useState([]);
   const [delay,setDelay] = useState(false);
@@ -42,6 +44,7 @@ function App() {
           <Route path='/booking' element={<Booking />} />
           <Route path='/TermsAndCondition' element={<TermsAndCondition />} />
         </Routes>
+        <Footer />
       </>
    
   );
