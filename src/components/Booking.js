@@ -110,10 +110,10 @@ const Booking = () => {
       </form>
 
       <div>
-        <h2>Bookings</h2>
+        <h2 className='heading'>Bookings</h2>
         <ul>
   {bookings.map((booking, index) => (
-    <li key={index}>
+    <li className='card-2' key={index}>
       <div>
         <strong>Name:</strong> {booking.name}
       </div>
