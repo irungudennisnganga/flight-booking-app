@@ -7,6 +7,7 @@ import Booking from './Booking';
 function App() {
   const [flight, setFlight] = useState([]);
   const [delay,setDelay] = useState(false);
+  const [flights, setFlights] = useState([]);
 
   useEffect(() => {
     fetch('https://flights-api-512j.onrender.com/flights')
@@ -32,6 +33,13 @@ function App() {
   </div>
   }
 
+  useEffect(() => {
+    fetch('https://flights-api-512j.onrender.com/flights')
+      .then((response) => response.json())
+      .then((data) => setFlights(data))
+      .catch((error) => alert(error));
+  }, []);
+
   return (
     
       <>
@@ -42,7 +50,6 @@ function App() {
           <Route path='/booking' element={<Booking />} />
         </Routes>
       </>
-   
   );
 }
 
