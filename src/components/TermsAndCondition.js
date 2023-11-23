@@ -2,7 +2,7 @@ import React from "react"
 
 function TermsAndCondition(){
     return(
-<div>
+<div className="terms">
 <h3>1. Booking Process:</h3>
 <p>Users must provide accurate and complete information during the booking process.
     The company reserves the right to cancel bookings with incomplete or false information.</p>
