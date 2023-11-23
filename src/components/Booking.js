@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import "./FlightForm.css"
-import Booked from './Booked';
+import React, { useState, useEffect } from 'react';
+import './FlightForm.css';
 const Booking = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -9,7 +8,16 @@ const Booking = () => {
     destinationCity: '',
     departureDate: '',
   });
-  const [inputData, setInput] = useState([ ])
+
+  const [bookings, setBookings] = useState([]);
+
+  useEffect(() => {
+   
+    fetch('http://localhost:4000/bookings') 
+      .then(response => response.json())
+      .then(data => setBookings(data));
+  }, []);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -19,31 +27,37 @@ const Booking = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:4000/bookings`, {
+
+
+    fetch('http://localhost:4000/bookings', { 
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        name: formData.name,
-        email: formData.email,
-        departureCity: formData.departureCity,
-        destinationCity: formData.destinationCity,
-        departureDate: formData.departureDate,
-      })
+      body: JSON.stringify(formData),
     })
-    .then(response => response.json())
-    .then(data => setInput(data))
-    
+      .then(response => response.json())
+      .then(data => {
+        // Update state with the new booking
+        setBookings([...bookings, data]);
+      });
+
+    // Clear the form
+    setFormData({
+      name: '',
+      email: '',
+      departureCity: '',
+      destinationCity: '',
+      departureDate: '',
+    });
   };
 
   return (
-    <div className='holder'>
-      <h1 className='header'>Flight Booking Form</h1>
-      <form className='input-data' onSubmit={handleSubmit}>
-        <label className='label-description' htmlFor="name">Name:</label>
+    <div id='booking'>
+      <h1>Flight Booking Form</h1>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name:</label>
         <input
-        className='input-data' 
           type="text"
           id="name"
           name="name"
@@ -52,9 +66,8 @@ const Booking = () => {
           required
         />
 
-        <label className='label-description' htmlFor="email">Email:</label>
+        <label htmlFor="email">Email:</label>
         <input
-        className='input-data'
           type="email"
           id="email"
           name="email"
@@ -63,9 +76,8 @@ const Booking = () => {
           required
         />
 
-        <label className='label-description' htmlFor="departureCity">Departure City:</label>
+        <label htmlFor="departureCity">Departure City:</label>
         <input
-        className='input-data'
           type="text"
           id="departureCity"
           name="departureCity"
@@ -74,9 +86,8 @@ const Booking = () => {
           required
         />
 
-        <label className='label-description' htmlFor="destinationCity">Destination City:</label>
+        <label htmlFor="destinationCity">Destination City:</label>
         <input
-        className='input-data'
           type="text"
           id="destinationCity"
           name="destinationCity"
@@ -85,9 +96,8 @@ const Booking = () => {
           required
         />
 
-        <labe className='label-description'l htmlFor="departureDate">Departure Date:</labe>
+        <label htmlFor="departureDate">Departure Date:</label>
         <input
-        className='input-data'
           type="date"
           id="departureDate"
           name="departureDate"
@@ -96,9 +106,34 @@ const Booking = () => {
           required
         />
 
-        <button className='submit-btn' type="submit">Submit Booking</button>
+        <button type="submit">Submit Booking</button>
       </form>
-      <Booked />
+
+      <div>
+        <h2>Bookings</h2>
+        <ul>
+  {bookings.map((booking, index) => (
+    <li key={index}>
+      <div>
+        <strong>Name:</strong> {booking.name}
+      </div>
+      <div>
+        <strong>Email:</strong> {booking.email}
+      </div>
+      <div>
+        <strong>Departure City:</strong> {booking.departureCity}
+      </div>
+      <div>
+        <strong>Destination City:</strong> {booking.destinationCity}
+      </div>
+      <div>
+        <strong>Departure Date:</strong> {booking.departureDate}
+      </div>
+    </li>
+  ))}
+</ul>
+
+      </div>
     </div>
   );
 };
