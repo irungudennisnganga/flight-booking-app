@@ -1,0 +1,20 @@
+{
+  "bookings": [
+    {
+      "id": "0",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "departureCity": "New York",
+      "destinationCity": "Los Angeles",
+      "departureDate": "2023-12-01"
+    },
+    {
+      "name": "dennis irungu",
+      "email": "irungud220@gmail.com",
+      "departureCity": "liverpool,england",
+      "destinationCity": "paris ,france",
+      "departureDate": "2023-11-17",
+      "id": "TVPpvfO"
+    }
+  ]
+}

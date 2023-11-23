@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./FlightForm.css"
+import Booked from './Booked';
 const Booking = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -8,7 +9,7 @@ const Booking = () => {
     destinationCity: '',
     departureDate: '',
   });
-
+  const [inputData, setInput] = useState([ ])
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -18,9 +19,22 @@ const Booking = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  //setFormData('')
-    // You can handle the form submission logic here or send the data to a backend
-    console.log('Form submitted:', formData);
+    fetch(`http://localhost:4000/bookings`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        departureCity: formData.departureCity,
+        destinationCity: formData.destinationCity,
+        departureDate: formData.departureDate,
+      })
+    })
+    .then(response => response.json())
+    .then(data => setInput(data))
+    
   };
 
   return (
@@ -84,6 +98,7 @@ const Booking = () => {
 
         <button className='submit-btn' type="submit">Submit Booking</button>
       </form>
+      <Booked />
     </div>
   );
 };
