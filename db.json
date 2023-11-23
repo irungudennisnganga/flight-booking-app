@@ -1,7 +1,7 @@
 {
   "bookings": [
     {
-      "id": "0",
+      "id": 1,
       "name": "John Doe",
       "email": "john.doe@example.com",
       "departureCity": "New York",
@@ -12,9 +12,41 @@
       "name": "dennis irungu",
       "email": "irungud220@gmail.com",
       "departureCity": "liverpool,england",
+      "destinationCity": "Milan, Italy",
+      "departureDate": "2023-11-04",
+      "id": 2
+    },
+    {
+      "name": "abdi",
+      "email": "abdi@gmail.com",
+      "departureCity": "liverpool,england",
       "destinationCity": "paris ,france",
-      "departureDate": "2023-11-17",
-      "id": "TVPpvfO"
+      "departureDate": "2023-11-24",
+      "id": 3
+    },
+    {
+      "name": "abdi",
+      "email": "abdi@gmail.com",
+      "departureCity": "liverpool,england",
+      "destinationCity": "paris ,france",
+      "departureDate": "2023-11-24",
+      "id": 4
+    },
+    {
+      "name": "maxwel",
+      "email": "maxwel@gmail.com",
+      "departureCity": "china",
+      "destinationCity": "france",
+      "departureDate": "2023-11-04",
+      "id": 5
+    },
+    {
+      "name": "john doe",
+      "email": "johndoe@gmail.com",
+      "departureCity": "liverpool,england",
+      "destinationCity": "paris ,france",
+      "departureDate": "2023-11-14",
+      "id": 6
     }
   ]
 }
