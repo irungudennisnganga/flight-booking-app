@@ -13,29 +13,26 @@ code {
 }
 
 .card-holder {
-  columns: 4;
-}
-.card {
-  height: 550px;
-  margin-top: 40px;
-  background-color: bisque;
-  border-radius: 10px;
-}
-.image {
-  container: flex container;
-  width: 100%; /* Ensure the container takes the full width */
-  height: 300px; /* Fixed height for the container */
-  border-radius: 16px;
-  margin-top: 8px;
-  overflow: hidden; /* Ensures content exceeding container size is clipped */
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ flex-wrap: wrap;
 }
 
-/* Adjust the img within the container */
-.image img {
-  width: 100%; /* Make the image take the full width of the container */
-  height: 100%; /* Make the image take the full height of the container */
-  object-fit: cover; /* Ensure the image covers the container */
+.card {
+  height: auto;
+  margin-bottom: 40px;
+  background-color: bisque;
+  width: 28%;
+  border-radius: 4%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.image {
+
+  width: 50%; 
+  height:auto;
+}
+
 
 .card-title {
  color: blueviolet;
@@ -55,13 +52,17 @@ code {
 
 /* Navbar styling */
 nav {
-  background-color: #333; /* Background color */
-  color: #fff; /* Text color */
-  padding: 30px; /* Padding for the entire navbar */
-  display: flex; /* Flex container */
+  background-color: #333; 
+  color: #fff;
+  padding: 30px; 
+  display: flex; 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  
 }
 
-/* Remove default list styles */
+
 ul {
   list-style: none;
   padding: 0;
@@ -69,21 +70,21 @@ ul {
   display: flex;
 }
 
-/* Style for each list item */
+
 li {
-  margin-right: 20px; /* Spacing between list items */
+  margin-right: 20px; 
 }
 
-/* Style for links */
+
 a {
-  text-decoration: none; /* Remove underline */
-  color: #fff; /* Link color */
+  text-decoration: none; 
+  color: #fff; 
   font-weight: bold;
   text-align: center;
   font-size: 20px;
 }
 
-/* Hover effect for links */
+
 a:hover {
-  color: bisque; /* Change color on hover */
+  color: bisque; 
 }
