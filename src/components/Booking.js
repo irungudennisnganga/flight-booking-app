@@ -13,7 +13,7 @@ const Booking = () => {
 
   useEffect(() => {
    
-    fetch('http://localhost:4000/bookings') 
+    fetch('https://booked-fiwq.onrender.com/booked') 
       .then(response => response.json())
       .then(data => setBookings(data));
   }, []);
@@ -29,7 +29,7 @@ const Booking = () => {
     e.preventDefault();
 
 
-    fetch('http://localhost:4000/bookings', { 
+    fetch('https://booked-fiwq.onrender.com/booked', { 
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
