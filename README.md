@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# Flight Booking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Flight Booking System! This system is designed to provide a user-friendly platform for booking flights, managing reservations, and accessing essential flight information. Whether you're a frequent traveler or planning a vacation, this system aims to streamline the flight booking process.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+1. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+2. [Features](#features)
+   - [User Registration](#user-registration)
+   - [Flight Search](#flight-search)
+   - [Booking Management](#booking-management)
+   - [Payment](#payment)
+   - [Flight Information](#flight-information)
+3. [Usage](#usage)
+   - [User Guide](#user-guide)
+   - [Admin Guide](#admin-guide)
+4. [Contributing](#contributing)
+5. [License](#license)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before you begin, ensure you have the following prerequisites installed:
 
-### `npm test`
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+- [MongoDB](https://www.mongodb.com/) (Make sure the MongoDB server is up and running)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/irungudennisnganga/flight-booking-system.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Change into the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd flight-booking-system
+   ```
 
-### `npm run eject`
+3. Install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Set up the configuration:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Rename `.env.example` to `.env` and configure the environment variables.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. Start the application:
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   The application will be accessible at `http://localhost:3000` by default.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features
 
-### Code Splitting
+### User Registration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Users can create accounts by providing necessary information.
+- Email verification for account activation.
 
-### Analyzing the Bundle Size
+### Flight Search
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Search and filter flights based on various criteria (date, destination, etc.).
+- View available flights with details such as departure time, arrival time, and price.
 
-### Making a Progressive Web App
+### Booking Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Users can book flights by selecting available options.
+- View and manage booked flights in the user dashboard.
 
-### Advanced Configuration
+### Payment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Secure payment gateway integration for seamless transactions.
 
-### Deployment
+### Flight Information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Detailed information about each flight, including departure and arrival details.
 
-### `npm run build` fails to minify
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### User Guide
+
+1. **Register an Account:**
+   - Navigate to the registration page and provide the required information.
+   - Verify your email to activate your account.
+
+2. **Search for Flights:**
+   - Use the search functionality to find suitable flights based on your preferences.
+
+3. **Book a Flight:**
+   - Select a flight and proceed to the booking page.
+   - Complete the payment process to confirm your reservation.
+
+4. **Manage Bookings:**
+   - Access your user dashboard to view and manage your booked flights.
+
+### Admin Guide
+
+1. **Access Admin Panel:**
+   - Log in with admin credentials to access the admin panel.
+
+2. **Manage Flights:**
+   - Add, edit, or remove flights from the system.
+
+3. **User Management:**
+   - View and manage user accounts.
+
+## Contributing
+
+We welcome contributions from the community. Feel free to open issues, submit pull requests, or provide feedback.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+MIT License
+
+Copyright © 2023 Hazel Njoki ,Irungu Dennis,AAbdirahman Cheda.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Happy flying! ✈️🌎
