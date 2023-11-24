@@ -2,23 +2,6 @@
 
 Welcome to the Flight Booking System! This system is designed to provide a user-friendly platform for booking flights, managing reservations, and accessing essential flight information. Whether you're a frequent traveler or planning a vacation, this system aims to streamline the flight booking process.
 
-## Table of Contents
-
-1. [Getting Started](#getting-started)
-   - [Prerequisites](#prerequisites)
-   - [Installation](#installation)
-2. [Features](#features)
-   - [User Registration](#user-registration)
-   - [Flight Search](#flight-search)
-   - [Booking Management](#booking-management)
-   - [Payment](#payment)
-   - [Flight Information](#flight-information)
-3. [Usage](#usage)
-   - [User Guide](#user-guide)
-   - [Admin Guide](#admin-guide)
-4. [Contributing](#contributing)
-5. [License](#license)
-
 ## Getting Started
 
 ### Prerequisites
@@ -112,12 +95,21 @@ Before you begin, ensure you have the following prerequisites installed:
 2. **Manage Flights:**
    - Add, edit, or remove flights from the system.
 
-3. **User Management:**
+3. **User Management**
    - View and manage user accounts.
 
 ## Contributing
 
 We welcome contributions from the community. Feel free to open issues, submit pull requests, or provide feedback.
+
+## Authors
+## Authors
+
+- [Irungu Dennis](https://irungudennisnganga.com) - Project Lead
+- [Contributor 1](https://abdi-cheda.com/contributor1) - Developer
+- [Contributor 2](https://hazelnjoki.com/contributor2) - Designer
+
+
 
 ## License
 
