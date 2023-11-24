@@ -103,20 +103,19 @@ Before you begin, ensure you have the following prerequisites installed:
 We welcome contributions from the community. Feel free to open issues, submit pull requests, or provide feedback.
 
 ## Authors
-## Authors
 
-- [Irungu Dennis](https://irungudennisnganga.com) - Project Lead
-- [Contributor 1](https://abdi-cheda.com/contributor1) - Developer
-- [Contributor 2](https://hazelnjoki.com/contributor2) - Designer
+- [Irungu Dennis](https://github.com/irungudennisnganga) - Project Lead
+- [abdi-cheda](https://github.com/abdi-cheda) - Developer
+- [hazelnjoki](https://github.com/hazelnjoki) - Designer
 
 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](license)  
 MIT License
 
-Copyright © 2023 Hazel Njoki ,Irungu Dennis,AAbdirahman Cheda.
+Copyright © 2023 Hazel Njoki ,Irungu Dennis,Abdirahman Cheda.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
