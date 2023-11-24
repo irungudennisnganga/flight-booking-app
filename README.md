@@ -10,8 +10,6 @@ Before you begin, ensure you have the following prerequisites installed:
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
-- [MongoDB](https://www.mongodb.com/) (Make sure the MongoDB server is up and running)
-
 ### Installation
 
 1. Clone the repository:
@@ -46,37 +44,16 @@ Before you begin, ensure you have the following prerequisites installed:
 
 ## Features
 
-### User Registration
-
-- Users can create accounts by providing necessary information.
-- Email verification for account activation.
-
-### Flight Search
-
-- Search and filter flights based on various criteria (date, destination, etc.).
-- View available flights with details such as departure time, arrival time, and price.
-
 ### Booking Management
 
 - Users can book flights by selecting available options.
 - View and manage booked flights in the user dashboard.
 
-### Payment
-
-- Secure payment gateway integration for seamless transactions.
-
 ### Flight Information
 
 - Detailed information about each flight, including departure and arrival details.
 
-## Usage
-
 ### User Guide
-
-1. **Register an Account:**
-   - Navigate to the registration page and provide the required information.
-   - Verify your email to activate your account.
-
 2. **Search for Flights:**
    - Use the search functionality to find suitable flights based on your preferences.
 
@@ -89,11 +66,8 @@ Before you begin, ensure you have the following prerequisites installed:
 
 ### Admin Guide
 
-1. **Access Admin Panel:**
-   - Log in with admin credentials to access the admin panel.
-
 2. **Manage Flights:**
-   - Add, edit, or remove flights from the system.
+   - Add and veiw flights from the system.
 
 3. **User Management**
    - View and manage user accounts.
@@ -105,8 +79,8 @@ We welcome contributions from the community. Feel free to open issues, submit pu
 ## Authors
 
 - [Irungu Dennis](https://github.com/irungudennisnganga) - Project Lead
-- [abdi-cheda](https://github.com/abdi-cheda) - Developer
-- [hazelnjoki](https://github.com/hazelnjoki) - Designer
+- [Abdi-Cheda](https://github.com/Abdi-Cheda) - Developer
+- [Hazel Njoki](https://github.com/hazelnjoki) - Designer
 
 
 
