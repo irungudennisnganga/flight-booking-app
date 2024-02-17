@@ -7,7 +7,7 @@ function Footer() {
     <div>
       <div className="footer">
         <div className="footer-content">
-        <img  className="logo" src="https://images.pexels.com/photos/733409/pexels-photo-733409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Airplane Icon" />
+        <img  className="logo" src="https://images.pexels.com/photos/1450335/pexels-photo-1450335.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Airplane Icon" />
       <div className="info">
         <h2>Contact Us</h2>
         <p>Author : Hazel Njoki</p>

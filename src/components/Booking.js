@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Booking.css';
-// import Footer from './Footer';
+import Footer from './Footer';
 
 const Booking = () => {
   const [formData, setFormData] = useState({
@@ -55,6 +55,7 @@ const Booking = () => {
   };
 
   return (
+    <>
     <div id='booking'>
       <h1>Flight Booking Form</h1>
       <form onSubmit={handleSubmit}>
@@ -136,8 +137,10 @@ const Booking = () => {
 </ul>
 
       </div>
-      {/* <Footer /> */}
+     
     </div>
+    <Footer />
+    </>
   );
 };
 

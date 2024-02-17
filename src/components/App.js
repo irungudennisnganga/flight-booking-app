@@ -4,7 +4,6 @@ import NavBar from './Navbar';
 import Flight from './Flight';
 import Booking from './Booking';
 import TermsAndCondition from './TermsAndCondition';
-import Footer from './Footer';
 import './App.css'
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
 
   if (!delay) {
     return <div className="container">
-    <div className="cloud front">
+    <div className="cloud-front">
       <span className="left-front"></span>
       <span className="right-front"></span>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Flight.css'
-// import Footer from './Footer';
+import Footer from './Footer';
 
 function Flight({ flight }) {
   function handleClick(id) {
@@ -23,6 +23,7 @@ function Flight({ flight }) {
   }
 
   return (
+    <>
     <div className='card-holder'>
       {flight.map(flightItem => (
         <div className='card' key={flightItem.id}>
@@ -45,8 +46,10 @@ function Flight({ flight }) {
           </button>
         </div>
       ))}
-      {/* <Footer /> */}
+      
     </div>
+    <Footer />
+    </>
   );
 }
 

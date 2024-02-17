@@ -1,9 +1,11 @@
 import React from "react"
 import './Terms.css'
+import Footer from "./Footer"
 
 
 function TermsAndCondition(){
     return(
+        <>
 <div className="terms">
 <h3>1. Booking Process:</h3>
 <p>Users must provide accurate and complete information during the booking process.
@@ -49,6 +51,8 @@ function TermsAndCondition(){
 <p>    The company reserves the right to update or modify these terms and conditions at any time without prior notice.
 </p>
 </div>
+<Footer />
+</>
 
 
     )}
