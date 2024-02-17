@@ -1,0 +1,57 @@
+.terms {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .terms h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .terms p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .terms {
+      width: 90%;
+    }
+  
+    .terms h3 {
+      font-size: 1.3rem;
+    }
+  
+    .terms p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .terms {
+      width: 95%;
+    }
+  
+    .terms h3 {
+      font-size: 1.2rem;
+    }
+  
+    .terms p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media only screen and (max-width: 414px) {
+    .terms {
+      width: 100%;
+    }
+  
+    .terms h3 {
+      font-size: 1.1rem;
+    }
+  
+    .terms p {
+      font-size: 0.7rem;
+    }
+  }
+  
