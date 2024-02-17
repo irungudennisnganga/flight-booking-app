@@ -5,6 +5,7 @@ import Flight from './Flight';
 import Booking from './Booking';
 import TermsAndCondition from './TermsAndCondition';
 import Footer from './Footer';
+import './App.css'
 
 function App() {
   const [flight, setFlight] = useState([]);
@@ -44,7 +45,7 @@ function App() {
           <Route path='/booking' element={<Booking />} />
           <Route path='/TermsAndCondition' element={<TermsAndCondition />} />
         </Routes>
-        <Footer />
+       
       </>
    
   );

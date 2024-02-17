@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './FlightForm.css';
+import './Booking.css';
+// import Footer from './Footer';
+
 const Booking = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -134,6 +136,7 @@ const Booking = () => {
 </ul>
 
       </div>
+      {/* <Footer /> */}
     </div>
   );
 };

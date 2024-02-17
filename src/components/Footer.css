@@ -1,0 +1,41 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .info {
+    text-align: center;
+  }
+  
+  .info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .info p {
+    margin: 5px 0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+    
+    .info {
+      margin-top: 20px;
+    }
+  }
+  

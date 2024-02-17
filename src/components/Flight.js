@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Flight.css'
+// import Footer from './Footer';
+
 function Flight({ flight }) {
   function handleClick(id) {
     fetch(`https://flights-api-512j.onrender.com/flights/${id}`, {
@@ -37,11 +40,12 @@ function Flight({ flight }) {
           <p>
             <b className='card-text'>Aeroplane</b>: {flightItem.aeroplane}
           </p>
-         <Link to="/Booking" ><button onClick={() => handleClick(flightItem.id)} className='book-btn'>
-            Book Ticket
-          </button></Link>
+         <button onClick={() => handleClick(flightItem.id)} className='book-btn'>
+         <Link to="/Booking" >Book Ticket</Link>
+          </button>
         </div>
       ))}
+      {/* <Footer /> */}
     </div>
   );
 }
